@@ -1,0 +1,171 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  padding: 20rem;
+  overflow-y: auto;
+}
+
+.modal-content {
+  background: var(--color-white);
+  border-radius: 12rem;
+  padding: 60rem;
+  max-width: 700rem;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.modal-close {
+  position: absolute;
+  top: 24rem;
+  right: 24rem;
+  background: none;
+  border: none;
+  font-size: 32rem;
+  color: var(--color-text);
+  cursor: pointer;
+  line-height: 1;
+  padding: 8rem;
+  transition: opacity 0.3s ease;
+}
+
+.modal-close:hover {
+  opacity: 0.6;
+}
+
+.modal-header {
+  margin-bottom: 40rem;
+  text-align: center;
+}
+
+.modal-header h2 {
+  font-size: 48rem;
+  margin-bottom: 16rem;
+}
+
+.modal-header p {
+  font-size: 18rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+.demo-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+}
+
+.form-group label {
+  font-size: 14rem;
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 16rem;
+  border: 1px solid #E0E0E0;
+  border-radius: 8rem;
+  font-size: 16rem;
+  font-family: var(--font-primary);
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+.form-group input.error,
+.form-group select.error {
+  border-color: #f2545b;
+}
+
+.error-text {
+  color: #f2545b;
+  font-size: 12rem;
+}
+
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12rem;
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+  gap: 8rem;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.radio-group input[type="radio"] {
+  width: 20rem;
+  height: 20rem;
+  cursor: pointer;
+}
+
+.form-consent {
+  padding: 16rem;
+  background: var(--color-bg);
+  border-radius: 8rem;
+}
+
+.form-consent p {
+  font-size: 12rem;
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+}
+
+.form-consent a {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+.form-submit {
+  width: 100%;
+  margin-top: 8rem;
+}
+
+@media (max-width: 767px) {
+  .modal-content {
+    padding: 40rem 24rem;
+  }
+  
+  .modal-header h2 {
+    font-size: 32rem;
+  }
+  
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+

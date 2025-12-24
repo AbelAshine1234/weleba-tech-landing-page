@@ -1,0 +1,30 @@
+.announcement-bar {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: 12rem 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.announcement-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.announcement-text {
+  font-size: 14rem;
+  font-weight: 500;
+  transition: opacity 0.3s ease;
+}
+
+.announcement-link:hover .announcement-text {
+  opacity: 0.8;
+}
+
+
+
+
+

@@ -1,0 +1,140 @@
+.products {
+  background-color: var(--color-bg);
+  padding: 120rem 0;
+}
+
+.products-header {
+  text-align: center;
+  max-width: 800rem;
+  margin: 0 auto 80rem;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24rem;
+  max-width: 1400rem;
+  margin: 0 auto 80rem;
+}
+
+.product-card {
+  background: var(--color-white);
+  padding: 32rem;
+  border-radius: 12rem;
+  position: relative;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  overflow: hidden;
+  min-height: 250rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card:hover {
+  transform: translateY(-8rem);
+  box-shadow: 0 8rem 24rem rgba(0, 0, 0, 0.1);
+  border-color: #4CAF50;
+}
+
+.product-card:hover .product-overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+.product-badge {
+  display: inline-block;
+  background: #4CAF50;
+  color: var(--color-white);
+  padding: 4rem 12rem;
+  border-radius: 4rem;
+  font-size: 11rem;
+  font-weight: 500;
+  margin-bottom: 16rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+}
+
+.product-card h3 {
+  font-size: 20rem;
+  margin-bottom: 12rem;
+  color: var(--color-primary);
+}
+
+.product-description {
+  font-size: 14rem;
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+  flex: 1;
+}
+
+.product-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(36, 36, 34, 0.95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  border-radius: 12rem;
+}
+
+.overlay-content {
+  text-align: center;
+  padding: 24rem;
+}
+
+.booking-required {
+  margin-bottom: 24rem;
+}
+
+.booking-required .lock-icon {
+  font-size: 32rem;
+  display: block;
+  margin-bottom: 12rem;
+}
+
+.booking-required p {
+  color: var(--color-white);
+  font-size: 16rem;
+  font-weight: 500;
+}
+
+.products-cta {
+  text-align: center;
+  padding: 40rem;
+  background: var(--color-white);
+  border-radius: 12rem;
+  max-width: 600rem;
+  margin: 0 auto;
+}
+
+.products-cta p {
+  font-size: 18rem;
+  margin-bottom: 24rem;
+  color: var(--color-text);
+}
+
+@media (max-width: 991px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .products-header h2 {
+    font-size: 36rem;
+  }
+  
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+

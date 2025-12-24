@@ -1,0 +1,44 @@
+.automate {
+  background-color: var(--color-white);
+}
+
+.automate-content {
+  max-width: 1000rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.automate-title {
+  font-size: 64rem;
+  margin-bottom: 32rem;
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+}
+
+.automate-description {
+  font-size: 18rem;
+  line-height: 1.8;
+  color: var(--color-text-secondary);
+  margin-bottom: 80rem;
+  max-width: 900rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.platform-title {
+  font-size: 64rem;
+  font-weight: 500;
+}
+
+@media (max-width: 767px) {
+  .automate-title,
+  .platform-title {
+    font-size: 36rem;
+  }
+}
+
+
+
+
+

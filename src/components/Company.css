@@ -1,0 +1,153 @@
+.company {
+  background-color: var(--color-white);
+  padding: 120rem 0;
+}
+
+.company-header {
+  text-align: center;
+  max-width: 800rem;
+  margin: 0 auto 80rem;
+}
+
+.company-header h2 {
+  font-size: 64rem;
+}
+
+.company-content {
+  max-width: 1200rem;
+  margin: 0 auto;
+}
+
+.company-text {
+  margin-bottom: 80rem;
+}
+
+.lead-text {
+  font-size: 24rem;
+  line-height: 1.8;
+  color: var(--color-primary);
+  font-weight: 500;
+  margin-bottom: 32rem;
+}
+
+.company-text p {
+  font-size: 18rem;
+  line-height: 1.8;
+  color: var(--color-text-secondary);
+  margin-bottom: 24rem;
+}
+
+.company-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32rem;
+  margin-bottom: 80rem;
+  padding: 40rem;
+  background: var(--color-bg);
+  border-radius: 12rem;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 48rem;
+  font-weight: 600;
+  color: #4CAF50;
+  margin-bottom: 8rem;
+}
+
+.stat-label {
+  font-size: 14rem;
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+}
+
+.company-values {
+  margin-bottom: 80rem;
+}
+
+.company-values h3 {
+  font-size: 40rem;
+  text-align: center;
+  margin-bottom: 60rem;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32rem;
+}
+
+.value-item {
+  text-align: center;
+  padding: 32rem;
+  background: var(--color-bg);
+  border-radius: 12rem;
+  transition: all 0.3s ease;
+}
+
+.value-item:hover {
+  transform: translateY(-8rem);
+  box-shadow: 0 8rem 24rem rgba(0, 0, 0, 0.1);
+}
+
+.value-icon {
+  font-size: 48rem;
+  margin-bottom: 16rem;
+}
+
+.value-item h4 {
+  font-size: 20rem;
+  margin-bottom: 12rem;
+  color: var(--color-primary);
+}
+
+.value-item p {
+  font-size: 14rem;
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+}
+
+.company-location {
+  text-align: center;
+  padding: 40rem;
+  background: var(--color-bg);
+  border-radius: 12rem;
+}
+
+.company-location h3 {
+  font-size: 32rem;
+  margin-bottom: 24rem;
+  color: var(--color-primary);
+}
+
+.company-location p {
+  font-size: 18rem;
+  color: var(--color-text-secondary);
+  margin-bottom: 8rem;
+}
+
+@media (max-width: 991px) {
+  .company-stats,
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .company-header h2 {
+    font-size: 36rem;
+  }
+  
+  .company-stats,
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+

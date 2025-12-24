@@ -1,0 +1,107 @@
+.app {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--color-bg);
+}
+
+.container {
+  max-width: 1440rem;
+  margin: 0 auto;
+  padding: 0 40rem;
+}
+
+@media (max-width: 991px) {
+  .container {
+    padding: 0 24rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding: 0 20rem;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--color-text);
+}
+
+h1 {
+  font-size: 80rem;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 64rem;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 32rem;
+  font-weight: 500;
+}
+
+p {
+  font-size: 16rem;
+  line-height: 1.6;
+  color: var(--color-text);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16rem 32rem;
+  font-size: 16rem;
+  font-weight: 500;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 4rem;
+  font-family: var(--font-primary);
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.btn-primary:hover {
+  background-color: #1a1a1a;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.section {
+  padding: 120rem 0;
+}
+
+@media (max-width: 991px) {
+  .section {
+    padding: 80rem 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .section {
+    padding: 60rem 0;
+  }
+}
+
+
+
+
+

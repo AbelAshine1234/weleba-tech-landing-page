@@ -1,0 +1,132 @@
+.services {
+  background-color: var(--color-white);
+  padding: 120rem 0;
+}
+
+.services-header {
+  text-align: center;
+  max-width: 800rem;
+  margin: 0 auto 80rem;
+}
+
+.section-label {
+  display: inline-block;
+  font-size: 14rem;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  color: var(--color-text-secondary);
+  margin-bottom: 16rem;
+}
+
+.services-header h2 {
+  font-size: 64rem;
+  margin-bottom: 24rem;
+}
+
+.section-description {
+  font-size: 18rem;
+  line-height: 1.8;
+  color: var(--color-text-secondary);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32rem;
+  max-width: 1400rem;
+  margin: 0 auto;
+}
+
+.service-card {
+  background: var(--color-bg);
+  padding: 40rem;
+  border-radius: 12rem;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid transparent;
+}
+
+.service-card:hover {
+  transform: translateY(-8rem);
+  box-shadow: 0 8rem 24rem rgba(0, 0, 0, 0.1);
+  border-color: #4CAF50;
+}
+
+.service-icon {
+  font-size: 48rem;
+  margin-bottom: 20rem;
+}
+
+.service-card h3 {
+  font-size: 24rem;
+  margin-bottom: 16rem;
+  color: var(--color-primary);
+}
+
+.service-description {
+  font-size: 16rem;
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+  margin-bottom: 24rem;
+  flex: 1;
+}
+
+.service-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8rem;
+  margin-bottom: 24rem;
+}
+
+.feature-tag {
+  background: var(--color-white);
+  padding: 6rem 12rem;
+  border-radius: 6rem;
+  font-size: 12rem;
+  color: var(--color-text);
+  border: 1px solid #E0E0E0;
+}
+
+.service-actions {
+  margin-top: auto;
+  padding-top: 24rem;
+  border-top: 1px solid #E0E0E0;
+}
+
+.booking-notice {
+  display: flex;
+  align-items: center;
+  gap: 8rem;
+  margin-bottom: 16rem;
+  font-size: 14rem;
+  color: var(--color-text-secondary);
+}
+
+.lock-icon {
+  font-size: 16rem;
+}
+
+.service-preview-btn {
+  width: 100%;
+}
+
+@media (max-width: 991px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .services-header h2 {
+    font-size: 36rem;
+  }
+  
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
