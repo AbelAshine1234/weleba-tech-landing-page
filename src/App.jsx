@@ -15,12 +15,13 @@ import BlogSection from './components/BlogSection'
 import CTA from './components/CTA'
 import Footer from './components/Footer'
 import DemoModal from './components/DemoModal'
+import SuccessPopup from './components/SuccessPopup'
 import AnnouncementBar from './components/AnnouncementBar'
 import useStore from './store/useStore'
 import './App.css'
 
 function App() {
-  const { isDemoModalOpen, setScrollY } = useStore()
+  const { isDemoModalOpen, isSuccessPopupOpen, setScrollY } = useStore()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -49,6 +50,7 @@ function App() {
       <CTA />
       <Footer />
       {isDemoModalOpen && <DemoModal />}
+      {isSuccessPopupOpen && <SuccessPopup />}
     </div>
   )
 }

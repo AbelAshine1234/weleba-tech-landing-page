@@ -6,6 +6,11 @@ const useStore = create((set) => ({
   openDemoModal: () => set({ isDemoModalOpen: true }),
   closeDemoModal: () => set({ isDemoModalOpen: false }),
   
+  // Success Popup State
+  isSuccessPopupOpen: false,
+  openSuccessPopup: () => set({ isSuccessPopupOpen: true }),
+  closeSuccessPopup: () => set({ isSuccessPopupOpen: false }),
+  
   // Navigation State
   isMenuOpen: false,
   toggleMenu: () => set((state) => ({ isMenuOpen: !state.isMenuOpen })),
