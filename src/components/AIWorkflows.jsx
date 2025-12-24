@@ -5,11 +5,11 @@ const AIWorkflows = () => {
   const workflows = [
     {
       title: 'Custom Software Development',
-      description: 'Tailored software solutions built specifically for your business needs. From booking systems integrated with email to complete enterprise applications, we deliver custom software that fits perfectly.'
+      description: 'Tailored software solutions built specifically for your business needs. From booking platforms to complete enterprise applications, we deliver custom software that fits perfectly.'
     },
     {
-      title: 'Email-Integrated Booking System',
-      description: 'Smart booking platform seamlessly connected with your email. Receive instant notifications, manage reservations, send confirmations, and sync calendars automatically - all from one integrated system.'
+      title: 'Marketing CRM Data for Ethiopia',
+      description: 'A marketing CRM data platform for Ethiopia with 10,000+ business records delivered via desktop and web apps with a mobile-friendly experience to power targeting, outreach, and reporting.'
     },
     {
       title: 'AI Systems & Solutions',

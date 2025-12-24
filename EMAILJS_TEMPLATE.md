@@ -58,120 +58,113 @@ Please contact them to schedule a demo session.
 <html>
 <head>
   <meta charset="UTF-8">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      color: #333;
-      max-width: 600px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-    .header {
-      background-color: #4F46E5;
-      color: white;
-      padding: 20px;
-      border-radius: 8px 8px 0 0;
-      text-align: center;
-    }
-    .content {
-      background-color: #f9fafb;
-      padding: 30px;
-      border: 1px solid #e5e7eb;
-      border-top: none;
-    }
-    .field {
-      margin-bottom: 15px;
-      padding: 12px;
-      background-color: white;
-      border-left: 3px solid #4F46E5;
-      border-radius: 4px;
-    }
-    .field-label {
-      font-weight: bold;
-      color: #4F46E5;
-      font-size: 12px;
-      text-transform: uppercase;
-      margin-bottom: 5px;
-    }
-    .field-value {
-      color: #1f2937;
-      font-size: 16px;
-    }
-    .message-box {
-      background-color: white;
-      padding: 15px;
-      border-left: 3px solid #10b981;
-      border-radius: 4px;
-      margin-top: 10px;
-    }
-    .footer {
-      text-align: center;
-      padding: 20px;
-      color: #6b7280;
-      font-size: 12px;
-      border-top: 1px solid #e5e7eb;
-      margin-top: 20px;
-    }
-  </style>
 </head>
-<body>
-  <div class="header">
-    <h1 style="margin: 0; font-size: 24px;">New Demo Request</h1>
-    <p style="margin: 10px 0 0 0; font-size: 14px; opacity: 0.9;">Weleba Tech Solutions</p>
-  </div>
-  
-  <div class="content">
-    <p style="margin-top: 0; font-size: 16px; color: #4b5563;">
-      You have received a new demo request from your website. Please review the details below and contact them to schedule a demo session.
-    </p>
-    
-    <div class="field">
-      <div class="field-label">Full Name</div>
-      <div class="field-value">{{from_name}}</div>
-    </div>
-    
-    <div class="field">
-      <div class="field-label">Email Address</div>
-      <div class="field-value">
-        <a href="mailto:{{from_email}}" style="color: #4F46E5; text-decoration: none;">{{from_email}}</a>
-      </div>
-    </div>
-    
-    <div class="field">
-      <div class="field-label">Title / Role</div>
-      <div class="field-value">{{title}}</div>
-    </div>
-    
-    <div class="field">
-      <div class="field-label">Organization</div>
-      <div class="field-value">{{organization}}</div>
-    </div>
-    
-    <div class="field">
-      <div class="field-label">Country / Region</div>
-      <div class="field-value">{{country}}</div>
-    </div>
-    
-    <div class="field">
-      <div class="field-label">Company Type</div>
-      <div class="field-value">{{company_type}}</div>
-    </div>
-    
-    {{#message}}
-    <div class="message-box">
-      <div class="field-label">Message</div>
-      <div class="field-value" style="white-space: pre-wrap;">{{message}}</div>
-    </div>
-    {{/message}}
-  </div>
-  
-  <div class="footer">
-    <p style="margin: 0;">
-      This email was automatically sent from the Weleba Tech Solutions contact form.<br>
-      Reply directly to this email to contact {{from_name}}.
-    </p>
-  </div>
+<body style="margin: 0; padding: 0; background-color: #EDE9E5;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #EDE9E5;">
+    <tr>
+      <td align="center" style="padding: 24px 12px;">
+        <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="width: 600px; max-width: 600px; background-color: #FFFFFF; border-radius: 12px; overflow: hidden;">
+          <tr>
+            <td style="padding: 20px 24px; background-color: #FFFFFF; border-bottom: 1px solid rgba(36,36,34,0.08);">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td valign="middle" style="width: 56px; padding-right: 12px;">
+                    <img src="{{logo_url}}" width="44" height="44" alt="Weleba Tech" style="display: block; border: 0; outline: none; text-decoration: none;" />
+                  </td>
+                  <td valign="middle" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;">
+                    <div style="font-size: 18px; font-weight: 600; color: #242422; line-height: 1.2;">Weleba Tech</div>
+                    <div style="font-size: 13px; color: rgba(36,36,34,0.70); line-height: 1.4;">Demo request notification</div>
+                  </td>
+                  <td valign="middle" align="right" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;">
+                    <div style="font-size: 12px; color: rgba(36,36,34,0.70);">New Demo Request</div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding: 22px 24px 8px 24px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;">
+              <div style="font-size: 22px; font-weight: 600; color: #242422; line-height: 1.25;">New Demo Request</div>
+              <div style="margin-top: 8px; font-size: 15px; color: rgba(36,36,34,0.70); line-height: 1.6;">
+                You’ve received a new demo request from your website. Review the details below and reply to schedule the demo.
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding: 8px 24px 22px 24px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border: 1px solid rgba(36,36,34,0.10); border-radius: 12px;">
+                <tr>
+                  <td style="padding: 16px 16px 2px 16px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; font-size: 12px; letter-spacing: 0.04em; text-transform: uppercase; color: rgba(36,36,34,0.65);">Requester</td>
+                </tr>
+                <tr>
+                  <td style="padding: 0 16px 16px 16px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; font-size: 16px; font-weight: 600; color: #242422;">{{from_name}}</td>
+                </tr>
+
+                <tr>
+                  <td style="padding: 0 16px 2px 16px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; font-size: 12px; letter-spacing: 0.04em; text-transform: uppercase; color: rgba(36,36,34,0.65);">Email</td>
+                </tr>
+                <tr>
+                  <td style="padding: 0 16px 16px 16px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; font-size: 15px; color: #242422;">
+                    <a href="mailto:{{from_email}}" style="color: #9478FC; text-decoration: none;">{{from_email}}</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td style="padding: 0 16px 2px 16px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; font-size: 12px; letter-spacing: 0.04em; text-transform: uppercase; color: rgba(36,36,34,0.65);">Title / Role</td>
+                </tr>
+                <tr>
+                  <td style="padding: 0 16px 16px 16px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; font-size: 15px; color: #242422;">{{title}}</td>
+                </tr>
+
+                <tr>
+                  <td style="padding: 0 16px 2px 16px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; font-size: 12px; letter-spacing: 0.04em; text-transform: uppercase; color: rgba(36,36,34,0.65);">Organization</td>
+                </tr>
+                <tr>
+                  <td style="padding: 0 16px 16px 16px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; font-size: 15px; color: #242422;">{{organization}}</td>
+                </tr>
+
+                <tr>
+                  <td style="padding: 0 16px 2px 16px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; font-size: 12px; letter-spacing: 0.04em; text-transform: uppercase; color: rgba(36,36,34,0.65);">Country / Region</td>
+                </tr>
+                <tr>
+                  <td style="padding: 0 16px 16px 16px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; font-size: 15px; color: #242422;">{{country}}</td>
+                </tr>
+
+                <tr>
+                  <td style="padding: 0 16px 2px 16px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; font-size: 12px; letter-spacing: 0.04em; text-transform: uppercase; color: rgba(36,36,34,0.65);">Company Type</td>
+                </tr>
+                <tr>
+                  <td style="padding: 0 16px 16px 16px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; font-size: 15px; color: #242422;">{{company_type}}</td>
+                </tr>
+
+                <tr>
+                  <td style="padding: 0 16px 2px 16px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; font-size: 12px; letter-spacing: 0.04em; text-transform: uppercase; color: rgba(36,36,34,0.65);">Message</td>
+                </tr>
+                <tr>
+                  <td style="padding: 0 16px 16px 16px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; font-size: 15px; color: #242422; white-space: pre-wrap;">{{message}}</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <tr>
+            <td align="center" style="padding: 0 24px 18px 24px;">
+              <a href="{{website_url}}" style="display: inline-block; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; font-size: 14px; font-weight: 600; color: #FFFFFF; background-color: #242422; text-decoration: none; padding: 12px 16px; border-radius: 10px;">Open Website</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding: 16px 24px; background-color: #EDE9E5; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; font-size: 12px; color: rgba(36,36,34,0.70); line-height: 1.6;">
+              This email was automatically sent from the Weleba Tech website.<br />
+              Reply to this email to contact {{from_name}}.
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
 </body>
 </html>
 ```
@@ -193,6 +186,8 @@ Make sure these variables are available in your template (they are automatically
 | `{{message}}` | Optional message from requester | "I'm interested in..." |
 | `{{subject}}` | Email subject line | "New Demo Request from John Doe" |
 | `{{to_email}}` | Recipient email (already set to abelashinework@gmail.com) | "abelashinework@gmail.com" |
+| `{{logo_url}}` | Absolute URL to logo image | "https://welebatech.et/assets/logo.png" |
+| `{{website_url}}` | Website base URL | "https://welebatech.et" |
 
 ---
 

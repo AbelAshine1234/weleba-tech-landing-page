@@ -15,13 +15,14 @@
 
 .modal-content {
   background: var(--color-white);
-  border-radius: 12rem;
-  padding: 60rem;
-  max-width: 700rem;
+  border-radius: 16rem;
+  padding: 48rem;
+  max-width: 640rem;
   width: 100%;
   max-height: 90vh;
   overflow-y: auto;
   position: relative;
+  box-shadow: 0 24rem 60rem rgba(0, 0, 0, 0.25);
 }
 
 .modal-close {
@@ -153,16 +154,52 @@
 }
 
 @media (max-width: 767px) {
+  .modal-overlay {
+    padding: 12rem;
+  }
+
   .modal-content {
-    padding: 40rem 24rem;
+    padding: 28rem 20rem 32rem;
+    border-radius: 14rem;
+    max-width: 100%;
   }
-  
+
+  .modal-header {
+    margin-bottom: 24rem;
+  }
+
   .modal-header h2 {
-    font-size: 32rem;
+    font-size: 26rem;
   }
-  
+
+  .modal-header p {
+    font-size: 15rem;
+  }
+
+  .modal-close {
+    top: 12rem;
+    right: 12rem;
+    font-size: 26rem;
+  }
+
   .form-row {
     grid-template-columns: 1fr;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    padding: 14rem;
+    font-size: 15rem;
+  }
+
+  .form-consent {
+    padding: 12rem;
+  }
+
+  .form-submit {
+    font-size: 14rem;
+    padding: 14rem 12rem;
   }
 }
 

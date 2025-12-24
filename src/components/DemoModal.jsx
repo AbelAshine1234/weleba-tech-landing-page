@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import emailjs from '@emailjs/browser'
 import useStore from '../store/useStore'
+import logoPng from '../assets/logo.png'
 import './DemoModal.css'
 
 const DemoModal = () => {
@@ -32,6 +33,15 @@ const DemoModal = () => {
 
     // Prepare template parameters
     // Note: Make sure your EmailJS template has 'to_email' set to abelashinework@gmail.com
+    const defaultLogoUrl = typeof window !== 'undefined' ? new URL(logoPng, window.location.origin).href : ''
+    const defaultWebsiteUrl = 'https://weleba.tech/'
+
+    const envLogoUrl = typeof import.meta !== 'undefined' ? import.meta.env?.VITE_EMAIL_LOGO_URL : undefined
+    const envWebsiteUrl = typeof import.meta !== 'undefined' ? import.meta.env?.VITE_WEBSITE_URL : undefined
+
+    const logoUrl = envLogoUrl || defaultLogoUrl
+    const websiteUrl = envWebsiteUrl || defaultWebsiteUrl
+
     const templateParams = {
       to_email: 'abelashinework@gmail.com', // Recipient email - all booking emails will be sent here
       from_name: `${data.firstName} ${data.lastName}`,
@@ -41,7 +51,9 @@ const DemoModal = () => {
       country: data.country,
       company_type: data.companyType,
       message: data.message || 'No message provided',
-      subject: `New Demo Request from ${data.firstName} ${data.lastName}`
+      subject: `New Demo Request from ${data.firstName} ${data.lastName}`,
+      logo_url: logoUrl,
+      website_url: websiteUrl
     }
 
     // Send email using EmailJS
@@ -124,8 +136,8 @@ const DemoModal = () => {
         <button className="modal-close" onClick={closeDemoModal}>×</button>
         
         <div className="modal-header">
-          <h2>Get Started with Weleba Tech Solutions</h2>
-          <p>Transform your business with our comprehensive software solutions. Let's discuss how we can help you grow.</p>
+          <h2>Request Preview of the App</h2>
+          <p>Fill out the form below to request a preview of the app.</p>
         </div>
 
         <form className="demo-form" onSubmit={handleSubmit}>
@@ -285,7 +297,7 @@ const DemoModal = () => {
             className="btn btn-primary form-submit"
             disabled={isSubmitting}
           >
-            {isSubmitting ? 'Sending...' : 'Request Consultation'}
+            {isSubmitting ? 'Sending...' : 'Request Preview of the App'}
           </button>
         </form>
       </div>

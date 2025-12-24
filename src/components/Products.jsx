@@ -9,9 +9,9 @@ const Products = () => {
   const products = [
     {
       id: 'booking-system',
-      title: 'Email-Integrated Booking System',
-      description: 'Smart booking platform seamlessly connected with your email. Receive instant notifications and manage reservations automatically.',
-      category: 'Booking Solutions',
+      title: 'Marketing CRM Data for Ethiopia',
+      description: 'Marketing CRM data platform for Ethiopia with 10,000+ business records, available as a desktop and web application with a mobile-friendly experience for outreach and planning.',
+      category: 'Marketing',
       requiresBooking: true
     },
     {
@@ -97,7 +97,7 @@ const Products = () => {
                     className="btn btn-primary"
                     onClick={() => handlePreview(product)}
                   >
-                    Book Demo Session
+                    Request Preview of the App
                   </button>
                 </div>
               </div>
@@ -108,7 +108,7 @@ const Products = () => {
         <div className="products-cta">
           <p>All products are custom-developed. Need something specific?</p>
           <button className="btn btn-secondary" onClick={openDemoModal}>
-            Request Custom Solution
+            Request Preview of the App
           </button>
         </div>
       </div>

@@ -24,8 +24,8 @@ const Services = () => {
     {
       id: 'hotel-booking',
       title: 'Hotel Booking Systems',
-      description: 'Complete reservation systems with email integration, real-time availability, and payment processing.',
-      features: ['Email Integration', 'Real-time Availability', 'Payment Processing', 'Guest Management'],
+      description: 'Complete reservation systems with real-time availability, payment processing, and guest management.',
+      features: ['Real-time Availability', 'Payment Processing', 'Guest Management', 'Reservations Dashboard'],
       requiresBooking: true
     },
     {
@@ -63,7 +63,7 @@ const Services = () => {
           <span className="section-label">Our Services</span>
           <h2>Comprehensive Software Solutions</h2>
           <p className="section-description">
-            All our services require booking for preview and consultation. Book a session to explore detailed features and get a personalized demo.
+            All our services require booking for preview. Request a preview of the app to explore detailed features.
           </p>
         </div>
 
@@ -89,7 +89,7 @@ const Services = () => {
                   className="btn btn-primary service-preview-btn"
                   onClick={() => handlePreview(service)}
                 >
-                  Book Preview Session
+                  Request Preview of the App
                 </button>
               </div>
             </div>

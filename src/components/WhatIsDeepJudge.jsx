@@ -15,7 +15,7 @@ const WhatIsDeepJudge = () => {
           </div>
           <div className="search-preview">
             <div className="search-input">
-              Need a custom booking system integrated with your email?
+              Need Marketing CRM data for Ethiopia (desktop + web app, 10,000+ records)?
             </div>
             <button className="search-btn">Get Custom Solution</button>
           </div>

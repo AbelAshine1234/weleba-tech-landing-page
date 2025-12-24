@@ -11,6 +11,10 @@
   box-shadow: 0 2rem 10rem rgba(0, 0, 0, 0.1);
 }
 
+.navbar.menu-open {
+  top: 0;
+}
+
 .navbar-content {
   display: flex;
   align-items: center;
@@ -27,6 +31,13 @@
   gap: 12rem;
 }
 
+.navbar-logo-image {
+  width: 40rem;
+  height: 40rem;
+  display: block;
+  object-fit: contain;
+}
+
 .logo-text {
   font-size: 24rem;
   font-weight: 600;
@@ -37,6 +48,11 @@
   display: flex;
   align-items: center;
   gap: 32rem;
+  margin-left: 48rem;
+}
+
+.navbar-menu-cta {
+  display: none;
 }
 
 .navbar-link {
@@ -56,6 +72,15 @@
   position: relative;
 }
 
+.navbar-dropdown-trigger {
+  background: transparent;
+  border: none;
+  padding: 0;
+  font: inherit;
+  color: inherit;
+  line-height: inherit;
+}
+
 .dropdown-content {
   position: absolute;
   top: 100%;
@@ -72,6 +97,10 @@
 }
 
 .navbar-dropdown:hover .dropdown-content {
+  display: flex;
+}
+
+.navbar-dropdown:focus-within .dropdown-content {
   display: flex;
 }
 
@@ -102,18 +131,26 @@
 @media (max-width: 991px) {
   .navbar-menu {
     position: fixed;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background: var(--color-white);
+    top: 12rem;
+    left: 12rem;
+    right: 12rem;
+    bottom: 12rem;
+    background: rgba(255, 255, 255, 0.96);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(36, 36, 34, 0.10);
+    border-radius: 16rem;
     flex-direction: column;
-    padding: 40rem;
-    gap: 24rem;
+    align-items: stretch;
+    padding: 24rem;
+    gap: 18rem;
     box-shadow: 0 4rem 20rem rgba(0, 0, 0, 0.1);
-    transform: translateY(-100%);
+    transform: translateY(-110%);
     opacity: 0;
     pointer-events: none;
     transition: all 0.3s ease;
+    margin-left: 0;
+    overflow-y: auto;
+    z-index: 2000;
   }
   
   .navbar-menu.open {
@@ -124,10 +161,51 @@
   
   .navbar-toggle {
     display: block;
+    padding: 10rem 14rem;
+    border-radius: 999rem;
+    border: 1px solid rgba(36, 36, 34, 0.16);
+    background: rgba(255, 255, 255, 0.8);
+  }
+
+  .navbar-link {
+    font-size: 18rem;
+    padding: 10rem 0;
+  }
+
+  .navbar-dropdown {
+    width: 100%;
+  }
+
+  .navbar-dropdown > .navbar-link {
+    font-weight: 600;
+  }
+
+  .dropdown-content {
+    position: static;
+    display: flex;
+    background: transparent;
+    box-shadow: none;
+    padding: 0 0 0 16rem;
+    margin-top: 0;
+    min-width: 0;
+    gap: 12rem;
+  }
+
+  .dropdown-content a {
+    font-size: 16rem;
   }
   
   .navbar-cta {
-    margin-left: 0;
+    display: none;
+  }
+
+  .navbar-menu-cta {
+    display: inline-flex;
+    width: 100%;
+    max-width: 320rem;
+    padding: 12rem 20rem;
+    font-size: 14rem;
+    border-radius: 8rem;
   }
 }
 

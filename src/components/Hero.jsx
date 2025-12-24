@@ -13,7 +13,7 @@ const Hero = () => {
             Empowering Ethiopian Businesses with Innovative Software Solutions
           </h1>
           <p className="hero-description">
-            Weleba Tech delivers custom software solutions including ERP systems, mobile applications, hotel booking platforms with email integration, education management systems, AI systems, drone services, and NFC solutions - all tailored for the Ethiopian market. Every solution is custom-built to fit your exact business needs.
+            Weleba Tech delivers custom software solutions including ERP systems, Marketing CRM Data for Ethiopia (desktop + web application with mobile experience), mobile applications, hotel booking platforms, education management systems, AI systems, drone services, and NFC solutions - all tailored for the Ethiopian market. Every solution is custom-built to fit your exact business needs.
           </p>
           <div className="hero-features">
             <div className="feature-box">🏨 Hotel Management & Booking Systems</div>
@@ -24,7 +24,6 @@ const Hero = () => {
             <div className="feature-box">📊 Market & Data Analytics Software</div>
             <div className="feature-box">📡 NFC Technology Solutions</div>
             <div className="feature-box">🚁 Drone Technology & Services</div>
-            <div className="feature-box">📅 Email-Integrated Booking Systems</div>
           </div>
         </div>
       </div>
